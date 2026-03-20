@@ -1,0 +1,41 @@
+.electrolize-regular {
+  font-family: "Electrolize", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quantico-regular {
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quantico-bold {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.quantico-regular-italic {
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.quantico-bold-italic {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.wellfleet-regular {
+  font-family: "Wellfleet", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.capriola-regular {
+  font-family: "Capriola", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

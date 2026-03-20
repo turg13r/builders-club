@@ -1,9 +1,54 @@
-h1 {
-    color:aqua;
-}
-
 #dinosaur {
     position: relative;
     top: 0px;
     left: 0px;
+}
+
+body {
+    background-color: rgb(255, 240, 172);
+    height:2000px;
+}
+
+#title_img {
+    width: 62%;
+    height: 40%;
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.section_1 {
+    padding:500px;
+}
+
+.section_1 h1 {
+    color:rgb(116, 78, 221);
+    position: absolute; 
+    font-size: 3em;
+    left: 42.5%; 
+    top: 350px;
+}
+
+.section_1 img:first-child {
+    position:absolute;
+    width:100%;
+    height:auto;
+    top:0px;
+    right:0px;
+}
+
+.section_2 {
+    position:absolute;
+    display:flex;
+    gap:100px;
+}
+
+.section_2 img {
+    position:relative;
+    width: 800px;
+    left:25px;
+    height:auto;
+    border-radius:10px;
 }
