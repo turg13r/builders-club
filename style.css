@@ -1,0 +1,9 @@
+h1 {
+    color:aqua;
+}
+
+#dinosaur {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
