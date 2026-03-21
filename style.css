@@ -1,3 +1,8 @@
+
+* {
+    z-index: 1;
+}
+
 #dinosaur {
     position: fixed;
     left: 0px;
@@ -11,7 +16,7 @@
     position:absolute;
     width:1900px;
     height:auto;
-    z-index:-1;
+    z-index:0;
 }
 
 body {
@@ -25,6 +30,29 @@ body {
     display:flex;
 }
 
+#blueprint_hammer {
+    position: absolute;
+    top:-25px;
+    width:350px;
+    height:auto;
+    left:780px;
+    transform: rotate(10deg);
+}
+
+#blueprint_hat {
+    top:-50px;
+    right:-20px;
+    width:300px;
+    position: absolute;
+    z-index:3
+}
+
+#blueprint_intro {
+    position: absolute;
+    width:auto;
+    height:780px;
+    top:55px;
+}
 
 #title_img {
     width: 800px;
@@ -32,23 +60,52 @@ body {
     position: relative;
     left:55%;
     padding-top:20px;
+    z-index: 2;
 }
 
 .section_1 h1 {
-    color:rgb(116, 78, 221);
+    border-width: 4px;
+    border-radius: 10px;
+    border-style: dashed;
+    border-color:rgb(209, 104, 19);
+    padding: 14px;
+    padding-top:6px;
+    background-color: rgba(255, 227, 141);
+    background-clip:padding-box;
+    height:30px;
+    color:rgb(163, 11, 11);
     position: relative; 
-    font-size: 2.25em;
+    font-size: 2.em;
     right: -275px; 
     top: 300px;
     margin:0px;
 }
 
-
+.section_1 h2 {
+    border-width: 4px;
+    border-radius: 10px;
+    border-style: dashed;
+    border-color:rgb(209, 104, 19);
+    padding: 8px;
+    background-color: rgba(255, 227, 141);
+    background-clip:padding-box;
+    height:30px;
+    color:rgb(163, 11, 11);
+    position: relative; 
+    font-size: 2.em;
+    right: 290px; 
+    top: 365px;
+    margin:0px;
+}
 .section_2 {
     padding-top:100px;
     padding-bottom: 20px;
     display:flex;
     gap:100px;
+}
+
+.section_2::before {
+    background-image: url("https://flavortown.hackclub.com/assets/kitchen_comic/brown-tile-429f226d.avif");
 }
 
 .section_2 img {
@@ -66,7 +123,7 @@ body {
     background-color:rgb(219, 132, 61);
     border-radius:10px;
     border-width:5px;
-    border-color:rgb(255, 220, 155);
+    border-color:rgb(97, 78, 43);
     border-style:solid;
     padding:10px;
 
@@ -74,7 +131,7 @@ body {
     color:rgb(0, 0, 0);
 
     background-image: url("imgs/paper_background.jpg");
-    background-clip: padding;
+    background-clip: padding-box;
 }
 
 .black_border {
@@ -96,12 +153,13 @@ body {
     flex-wrap: nowrap;
     padding-bottom: 20px;
     padding-top: 100px;
-    width:auto;
+    width:1290px;
     height:2000px;
     flex-direction: column;
     align-content:stretch;
     align-items:stretch;
-    gap:5px;
+    padding-left: 15px;
+    gap:20px 20px;
 }
 
 
@@ -128,18 +186,24 @@ sticky - Element toggles between a relative and fixed position, depending on the
 
     height:500px;
     border-radius:10px;
-    border-width:5px;
-    border-color:rgb(255, 220, 155);
+    border-width:8px;
+    border-color:rgb(107, 88, 53);
     border-style:dotted;
-
 }
+
+
+.step_1:nth-child(2) , .step_2:nth-child(2) , .step_3:nth-child(2) , .step_4:nth-child(2) {
+    padding-top: -10px;
+    display:none;
+}
+
 
 .step_1 div:nth-child(2) {
     padding-left:0px;
     position:absolute;
     height: 525px;
     padding-top: 5px;
-    z-index:-1;
+    z-index:0;
 }
 
 .step_1 div:nth-child(2) img { /* This 2nd div child always contains the image. 1st div child is always text, accordingly. */
@@ -160,7 +224,7 @@ sticky - Element toggles between a relative and fixed position, depending on the
     position:absolute;
     height: 525px;
     padding-top: 5px;
-    z-index:-1;
+    z-index:0;
 }
 
 .step_2 div:nth-child(2) img { /* This 2nd div child always contains the image. 1st div child is always text, accordingly. */
@@ -181,7 +245,7 @@ sticky - Element toggles between a relative and fixed position, depending on the
     position:absolute;
     height: 525px;
     padding-top: 5px;
-    z-index:-1;
+    z-index:0;
 }
 
 .step_3 div:nth-child(2) img { /* This 2nd div child always contains the image. 1st div child is always text, accordingly. */
@@ -202,7 +266,7 @@ sticky - Element toggles between a relative and fixed position, depending on the
     position:absolute;
     height: 525px;
     padding-top: 5px;
-    z-index:-1;
+    z-index:0;
 }
 
 .step_4 div:nth-child(2) img { /* This 2nd div child always contains the image. 1st div child is always text, accordingly. */
@@ -378,4 +442,9 @@ footer > div {
     border-style: dashed;
     padding:10px;
     background-clip: border-box;
+}
+
+#bg {
+    background-image: url("imgs/wood_texture.jpg");
+    z-index: 0;
 }
