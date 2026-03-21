@@ -196,7 +196,7 @@ body {
     padding-bottom: 20px;
     padding-top: 100px;
     width:1290px;
-    height:1700px;
+    height:2000px;
     flex-direction: column;
     align-content:stretch;
     align-items:stretch;
@@ -555,4 +555,23 @@ footer > div {
     border-top-width: 10px;
     border-bottom-width: 10px;
     box-shadow: rgba(136, 74, 4, 0.747) 0px -50px 20px -40px inset;
+}
+
+
+.section_2_bg{
+    position: absolute;
+    width:1900px;
+    height:610px;
+    top:1500px;
+    z-index:-2;
+    object-fit: cover;
+}
+
+.section_3_bg {
+    position: absolute;
+    width:1900px;
+    height:610px;
+    top:2100px;
+    z-index:-1;
+    object-fit: cover;
 }
