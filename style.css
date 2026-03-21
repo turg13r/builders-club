@@ -102,16 +102,53 @@ body {
     gap:5px;
 }
 
+
+/* .class > div:nth-child(-n + 3 of .affected_class)
+   .class > div.affected_class:nth-child(-n + 3)
+   
+   
+   The first one applies to the first three .affected_class elements regardless of if their position is < 3
+   The second one applies to the first three div elements, and to the possible .affected_class elements there 
+*/
+
+/*
+static - This is default. Element is positioned according to the normal document flow
+relative - Element is positioned relative to its normal position in the document flow
+fixed - Element is positioned relative to the viewport
+absolute - Element is positioned relative to the nearest positioned ancestor (i.e. parent has pos other than static)
+sticky - Element toggles between a relative and fixed position, depending on the scroll position
+*/
+
 .step_1, .step_2, .step_3, .step_4 {
+    display:flex;
+    flex-direction: column;
+    align-items:start;
+
     height:500px;
     border-radius:10px;
-    border-width:6px;
+    border-width:5px;
     border-color:rgb(255, 220, 155);
     border-style:dotted;
 
-
 }
 
-.step_4 {
-    
+.step_1 div:nth-child(2) {
+    padding-left:0px;
+    position:absolute;
+    height: 525px;
+    padding-top: 5px;
+    z-index:-1;
+}
+
+.step_1 div:nth-child(2) img { /* This 2nd div child always contains the image. 1st div child is always text, accordingly. */
+    border-radius:10px;
+    width:auto;
+    height:90%;
+    overflow:hidden;
+    top:0px;
+}
+
+#step_1_idea {
+    color: green;
+    font-size: 1.1em;
 }
