@@ -81,8 +81,8 @@ body {
 .section_1_border {
     border-radius:10px;
     border-width:6px;
-    border-color:rgb(255, 220, 155);
-    border-style:dotted;
+    border-color:rgb(209, 104, 19);
+    border-style:dashed;
 }
 
 #robux {
@@ -150,5 +150,68 @@ sticky - Element toggles between a relative and fixed position, depending on the
 
 #step_1_idea {
     color: green;
+    font-size: 1.1em;
+}
+
+.step_2 div:nth-child(2) {
+    padding-left:0px;
+    position:absolute;
+    height: 525px;
+    padding-top: 5px;
+    z-index:-1;
+}
+
+.step_2 div:nth-child(2) img { /* This 2nd div child always contains the image. 1st div child is always text, accordingly. */
+    border-radius:10px;
+    width:auto;
+    height:90%;
+    overflow:hidden;
+    top:0px;
+}
+
+#step_2_idea {
+    color: rgb(60, 88, 214);
+    font-size: 1.1em;
+}
+
+.step_3 div:nth-child(2) {
+    padding-left:0px;
+    position:absolute;
+    height: 525px;
+    padding-top: 5px;
+    z-index:-1;
+}
+
+.step_3 div:nth-child(2) img { /* This 2nd div child always contains the image. 1st div child is always text, accordingly. */
+    border-radius:10px;
+    width:auto;
+    height:90%;
+    overflow:hidden;
+    top:0px;
+}
+
+#step_3_idea {
+    color: rgb(255, 109, 41);
+    font-size: 1.1em;
+}
+
+.step_4 div:nth-child(2) {
+    padding-left:0px;
+    position:absolute;
+    height: 525px;
+    padding-top: 5px;
+    z-index:-1;
+}
+
+.step_4 div:nth-child(2) img { /* This 2nd div child always contains the image. 1st div child is always text, accordingly. */
+    border-radius:10px;
+    width:auto;
+    height:90%;
+    overflow:hidden;
+    top:0px;
+}
+
+#step_4_idea {
+    color: rgb(68, 134, 24);
     font-size: 1.1em;
 }
