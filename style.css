@@ -23,11 +23,15 @@ body {
     background-color: rgb(255, 240, 172);
     height:2000px;
     margin:0;
+    background-image: url("imgs/spikes2.png");
 }
 .section_1 {
     padding-bottom:1000px;
     width:100%;
     display:flex;
+    background-image: url("imgs/spikes.png");
+    background-blend-mode:color-burn;
+    background-color: rgb(255,240,172);
 }
 
 #blueprint_hammer {
@@ -47,6 +51,14 @@ body {
     z-index:3
 }
 
+#blueprint_upthere {
+    top:455px;
+    right:225px;
+    width:525px;
+    position: absolute;
+    z-index:1;
+}
+
 #blueprint_intro {
     position: absolute;
     width:auto;
@@ -63,11 +75,21 @@ body {
     z-index: 2;
 }
 
+#blueprint_beginning {
+    z-index:1;
+    position: absolute; 
+    right: 180px; 
+    top: 255px;
+    width:710px;
+    height:220px;
+    margin:0px;
+}
+
 .section_1 h1 {
-    border-width: 4px;
+    border-width: 2px;
     border-radius: 10px;
-    border-style: dashed;
-    border-color:rgb(209, 104, 19);
+    border-style: solid;
+    border-color:rgb(255, 255, 255);
     padding: 14px;
     padding-top:6px;
     background-color: rgba(255, 227, 141);
@@ -82,10 +104,10 @@ body {
 }
 
 .section_1 h2 {
-    border-width: 4px;
+    border-width: 2px;
     border-radius: 10px;
-    border-style: dashed;
-    border-color:rgb(209, 104, 19);
+    border-style: solid;
+    border-color:rgb(255, 255, 255);
     padding: 8px;
     background-color: rgba(255, 227, 141);
     background-clip:padding-box;
@@ -442,9 +464,4 @@ footer > div {
     border-style: dashed;
     padding:10px;
     background-clip: border-box;
-}
-
-#bg {
-    background-image: url("imgs/wood_texture.jpg");
-    z-index: 0;
 }
