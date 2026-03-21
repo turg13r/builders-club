@@ -330,3 +330,52 @@ sticky - Element toggles between a relative and fixed position, depending on the
 #ending {
     width:1900px;
 }
+
+#signup {
+    position:absolute;
+    right:45px;
+    top:45px;
+    width:auto;
+    height:750px;
+    z-index:10;
+}
+
+#signupbutton {
+    position:absolute;
+    width:589px;
+    height:52.5px;
+    right:80px;
+    bottom: 379px; 
+    border-radius:4px;
+    z-index:11;
+}
+
+
+.section_6 {
+    display:flex;
+    flex-wrap: nowrap;
+    padding-top: 20px;
+    width:auto;
+    height:400px;
+    flex-direction: column;
+    align-content:center;
+    align-items:center;
+    gap:5px;
+    position:relative;
+}
+
+footer {
+}
+
+footer > div {
+    font-size:2em;
+    color: rgb(197, 96, 13);
+    background-color: rgb(88, 40, 0);
+    border-top-width: 8px;
+    border-bottom-width: 8px;
+    border-left-width:0px;
+    border-right-width:0px;
+    border-style: dashed;
+    padding:10px;
+    background-clip: border-box;
+}
