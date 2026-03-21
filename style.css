@@ -196,12 +196,11 @@ body {
     height:400px;
     width:800px;
     border-color:rgb(97, 78, 43);
-    border-radius:15px;
-    box-shadow: rgba(192, 72, 3, 0.15) 0px 0px 10px 10px;
+    box-shadow: rgba(226, 105, 6, 0.15) 0px 0px 10px 10px;
     border-style: solid;
     border-width: 4px;
-    border-color: #fcc45c;
-    text-shadow: 0 0 4px #b88840;
+    border-color: #f06340;
+    text-shadow: 0 0 4px #ce6629;
     padding:15px;
     margin-top: -150px;
 
@@ -293,7 +292,7 @@ sticky - Element toggles between a relative and fixed position, depending on the
     padding-left:250px;
 
     height:500px;
-    border-radius:10px;
+    border-radius: 0px;
     border-width:10px;
 }
 
@@ -308,7 +307,7 @@ sticky - Element toggles between a relative and fixed position, depending on the
 }
 
 .step_1 div:nth-child(2) img { /* This 2nd div child always contains the image. 1st div child is always text, accordingly. */
-    border-radius:10px;
+    border-radius:2px;
     width:auto;
     height:90%;
     overflow:hidden;
@@ -332,7 +331,7 @@ sticky - Element toggles between a relative and fixed position, depending on the
 }
 
 .step_2 div:nth-child(2) img { /* This 2nd div child always contains the image. 1st div child is always text, accordingly. */
-    border-radius:10px;
+    border-radius:2px;
     width:auto;
     height:90%;
     overflow:hidden;
@@ -352,7 +351,7 @@ sticky - Element toggles between a relative and fixed position, depending on the
 }
 
 .step_3 div:nth-child(2) img { /* This 2nd div child always contains the image. 1st div child is always text, accordingly. */
-    border-radius:10px;
+    border-radius:2px;
     width:auto;
     height:90%;
     overflow:hidden;
@@ -372,7 +371,7 @@ sticky - Element toggles between a relative and fixed position, depending on the
 }
 
 .step_4 div:nth-child(2) img { /* This 2nd div child always contains the image. 1st div child is always text, accordingly. */
-    border-radius:10px;
+    border-radius:2px;
     width:auto;
     height:90%;
     overflow:hidden;
@@ -392,7 +391,7 @@ sticky - Element toggles between a relative and fixed position, depending on the
 .section_4 {
     display:flex;
     flex-wrap: nowrap;
-    padding-bottom: 600px;
+    padding-bottom: 225px;
     padding-top: 20px;
     width:auto;
     height:800px;
@@ -565,6 +564,18 @@ footer > div {
     border-bottom-width: 10px;
 }
 
+.bar_2 {
+    width:1900px;
+    height: 220px;
+   
+    margin-top:50px;
+    background-image: url("imgs/coaster_2.png");
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+}
+
 .abar_1 {
     width:1900px;
     height: 25px;
@@ -644,6 +655,10 @@ footer > div {
 animation: open 1s alternate ease-in-out infinite;
 }
 
+#gold_info_2:hover {
+animation: open 1s alternate ease-in-out infinite;
+}
+
 #gold_info {
     padding-top: 5px;
     padding-left:10px;
@@ -657,6 +672,27 @@ animation: open 1s alternate ease-in-out infinite;
     width:950px;
     
     height:100px;
+    border-radius:10px;
+    border-width:5px;
+    border-color:rgb(174, 219, 132);
+    background-color: #f3bd6b;
+    border-style:solid;
+    text-shadow: 1px 1px 5px #ad5c26;
+    box-shadow: rgba(135, 196, 123, 0.877) 3px 3px 8px 4px; 
+}
+#gold_info_2 {
+    padding-top: 5px;
+    padding-left:10px;
+    margin-left:1115px;
+    font-size: 1.5em;
+    position:absolute;
+    top:-60px;
+    background-image: url(imgs/paper_background.jpg);
+
+    color:#683104;
+    width:150px;
+    
+    height:35px;
     border-radius:10px;
     border-width:5px;
     border-color:rgb(174, 219, 132);
