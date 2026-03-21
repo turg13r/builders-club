@@ -3,6 +3,10 @@
     z-index: 1;
 }
 
+body {
+    background-color: #e1fffe;
+}
+
 #dinosaur {
     position: fixed;
     left: 0px;
@@ -15,23 +19,15 @@
 #rollercoaster {
     position:absolute;
     width:1900px;
+    overflow:hidden;
     height:auto;
     z-index:0;
 }
 
-body {
-    background-color: rgb(255, 240, 172);
-    height:2000px;
-    margin:0;
-    background-image: url("imgs/spikes2.png");
-}
 .section_1 {
-    padding-bottom:1000px;
+    padding-bottom:700px;
     width:100%;
     display:flex;
-    background-image: url("imgs/spikes.png");
-    background-blend-mode:color-burn;
-    background-color: rgb(255,240,172);
 }
 
 #blueprint_hammer {
@@ -48,7 +44,8 @@ body {
     right:-20px;
     width:300px;
     position: absolute;
-    z-index:3
+    z-index:3;
+    overflow:hidden;
 }
 
 #blueprint_upthere {
@@ -73,6 +70,7 @@ body {
     left:55%;
     padding-top:20px;
     z-index: 2;
+    overflow:hidden;
 }
 
 #blueprint_beginning {
@@ -85,49 +83,69 @@ body {
     margin:0px;
 }
 
-.section_1 h1 {
-    border-width: 2px;
-    border-radius: 10px;
-    border-style: solid;
-    border-color:rgb(255, 255, 255);
-    padding: 14px;
-    padding-top:6px;
-    background-color: rgba(255, 227, 141);
+#img_desc h1 {
+    text-shadow: 0 2px 5px #f19b95;
+    margin-top:0px;
+    padding: 10px;
     background-clip:padding-box;
     height:30px;
     color:rgb(163, 11, 11);
-    position: relative; 
     font-size: 2.em;
-    right: -275px; 
-    top: 300px;
-    margin:0px;
 }
 
-.section_1 h2 {
-    border-width: 2px;
+#img_desc h2 {
+    margin-top:0px;
+    text-shadow: 0 2px 5px #f19b95;
     border-radius: 10px;
-    border-style: solid;
-    border-color:rgb(255, 255, 255);
-    padding: 8px;
-    background-color: rgba(255, 227, 141);
+    padding: 10px;
     background-clip:padding-box;
     height:30px;
     color:rgb(163, 11, 11);
-    position: relative; 
     font-size: 2.em;
-    right: 290px; 
-    top: 365px;
-    margin:0px;
 }
+
+#img_desc {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width:750px;
+    height:500px;
+    position:relative;
+    background-color: #ffffff;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #5d5e5a;
+    top:275px;
+    right:-275px;
+    box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 3.5px;
+}
+
+#img_desc span {
+    width:50px;
+    height:50px;
+    position:absolute;
+    background-color: #ff3535;
+    padding-right: 0px;
+    border-width: 5px;
+    
+    border-style: solid;
+    border-color: #5d5e5a;
+    font-size: 2.7em;
+    top:5px;
+    right:5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 3.5px;
+}
+
+#img_desc > * {
+    position:relative;
+    top:10px;
+}
+
 .section_2 {
     padding-top:100px;
     padding-bottom: 20px;
     display:flex;
     gap:100px;
-}
-
-.section_2::before {
-    background-image: url("https://flavortown.hackclub.com/assets/kitchen_comic/brown-tile-429f226d.avif");
 }
 
 .section_2 img {
@@ -142,12 +160,14 @@ body {
     display:block;
     width:900px;
     height:300px;
-    background-color:rgb(219, 132, 61);
-    border-radius:10px;
-    border-width:5px;
     border-color:rgb(97, 78, 43);
-    border-style:solid;
-    padding:10px;
+    border-radius:15px;
+    box-shadow: rgba(192, 72, 3, 0.15) 0px 0px 10px 10px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #fcc45c;
+    text-shadow: 0 0 4px #b88840;
+    padding:15px;
 
     font-size:40px;
     color:rgb(0, 0, 0);
@@ -159,11 +179,11 @@ body {
 .black_border {
     border-color: rgb(218, 128, 27);
 }
-.section_1_border {
-    border-radius:10px;
-    border-width:6px;
-    border-color:rgb(209, 104, 19);
-    border-style:dashed;
+.section_1_blueprint {
+    border-width: 5px;
+    border-style: solid;
+    border-color: #dd8c49;
+   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; 
 }
 
 #robux {
@@ -176,7 +196,7 @@ body {
     padding-bottom: 20px;
     padding-top: 100px;
     width:1290px;
-    height:2000px;
+    height:1700px;
     flex-direction: column;
     align-content:stretch;
     align-items:stretch;
@@ -184,6 +204,24 @@ body {
     gap:20px 20px;
 }
 
+#section_3_title {
+    padding-top: 5px;
+    font-size: 5em;
+
+    margin-bottom: -60px;
+    color:#683104;
+    width:390px;
+    margin-top:25px;
+    margin-left:10px;
+    padding-left:10px;
+    padding-top: 10px;
+    height:100px;
+    border-radius:10px;
+    border-width:8px;
+    border-color:rgb(223, 111, 59);
+    background-color: #f3bd6b;
+    border-style:solid;
+}
 
 /* .class > div:nth-child(-n + 3 of .affected_class)
    .class > div.affected_class:nth-child(-n + 3)
@@ -411,10 +449,12 @@ sticky - Element toggles between a relative and fixed position, depending on the
 .section_5 {
     display:flex;
     position:relative;
+    overflow:hidden;
 }
 
 #ending {
     width:1900px;
+    overflow:hidden
 }
 
 #signup {
@@ -464,4 +504,55 @@ footer > div {
     border-style: dashed;
     padding:10px;
     background-clip: border-box;
+    overflow: hidden;
+}
+
+
+.bar_0{
+    width:1900px;
+
+    border-style: dashed;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 10px;
+    border-color: #d1ac75;
+    padding-bottom: 5px;
+}
+
+
+.bar_1 {
+    width:1900px;
+    height: 220px;
+   
+    margin-top:50px;
+    background-image: url("imgs/coaster_1.png");
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+}
+
+.abar_1 {
+    width:1900px;
+    height: 25px;
+   
+    background-color: rgb(228, 139, 57);
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    box-shadow: rgba(136, 74, 4, 0.747) 0px -50px 20px -40px inset;
+}
+
+.bbar_1 {
+    width:1900px;
+    height: 25px;
+   
+    background-color: rgb(228, 139, 57);
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    box-shadow: rgba(136, 74, 4, 0.747) 0px -50px 20px -40px inset;
 }
