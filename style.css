@@ -135,26 +135,29 @@ body {
     box-shadow: rgba(0, 0, 0, 0.15) 0.25em 0.25em 0.175em;
 }
 
-#img_desc span {
-    width:5.5%;
-    height:11.5%;
+#btn_img {
+    width:1.5vw;
+    height:1.5vw;
+    right:-37.9vw;
+    z-index:10;
+    top:15.5vw;
     position:absolute;
     background-color: #ff3535;
-    padding-right: 0.05vw;
-    border-width: 0.1em;
-    padding-top: 0.05em;
     
     border-style: solid;
     border-color: #9e340a;
     font-size: 1.9vw;
 
-    top:0.3vw;
-    right:0.35vw;
     box-shadow: rgba(0, 0, 0, 0.15) 0.05em 0.1em 0.08em;
     text-align: left;
 }
 
+#btn_img:hover {
+    opacity: 0.9;
+}
+
 #img_desc span:hover {
+    
     color:#575757;
     width:5.5%;
     height:11.5%;
