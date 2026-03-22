@@ -74,12 +74,22 @@ body {
 
     100% {
         border-width: 0.55vw;
-        border-color: #ecf7e1;
+        border-color: #ff7d41;
     }
 }
 
+@keyframes open2 {
+    0% {
+        border-width: 0.5vw;
+    }
+
+    100% {
+        border-width: 0.6vw;
+        border-color: #a8e99f;
+    }
+}
 .borderpulse:hover {
-    animation: open 2s ease-in-out alternate infinite; 
+    animation: open 0.6s ease-in-out alternate infinite; 
 }
 
 
@@ -95,7 +105,8 @@ body {
 
 #img_desc h1 {
     text-shadow: 0 0.1em 0.1em #f19b95;
-    margin-top:0vw;
+    margin-top:-1.5vw;
+    margin-left:0.1vw;
     padding: 0.5vw;
     background-clip:padding-box;
     height:2vh;
@@ -104,7 +115,8 @@ body {
 }
 
 #img_desc h2 {
-    margin-top:0vw;
+    margin-top:-0.2vw;
+    margin-left:0.2vw;
     text-shadow: 0 0.1em 0.1em #f19b95;
     border-radius: 1em;;
     padding: 1.1vh;
@@ -140,8 +152,8 @@ body {
     height:1.5vw;
     right:-37.9vw;
     z-index:10;
-    top:15.5vw;
-    position:absolute;
+    top: 0.2vw;
+    position:relative;
     background-color: #ff3535;
     
     border-style: solid;
@@ -176,10 +188,6 @@ body {
     text-align: left;
 }
 
-#img_desc > * {
-    position:relative;
-    top:0.2vw;
-}
 
 .section_2 {
     padding-top:15vw;
@@ -239,7 +247,7 @@ body {
                 padding-left:1.5vw;
                 width:25vw;
                 height:4vw;
-                           border-color: rgb(143, 221, 221);
+                           border-color: rgba(191, 243, 243, 0.644);
                            border-width:0.05em;
                            border-style: solid;
                            text-shadow: 0.03em 0.01em 0.05em #7e9b67;
@@ -250,6 +258,21 @@ body {
                            background-repeat: repeat;
                 
 }
+
+.outline {
+    position:absolute;
+    background-color: #e08720;
+    width:70vw;
+    height:109.5vw;
+    left:14.5vw;
+    top:147vw;
+    border-radius: 1vw;
+    background-image: url("imgs/pattern_1.jpg");
+    background-size: cover;
+    background-clip: content-box;
+    background-blend-mode: lighten;
+}
+
 
 .section_3 {
     display:flex;
@@ -270,6 +293,7 @@ body {
 }
 
 #section_3_title {
+    position:absolute;
     padding-top: 0.5vw;
     font-size: 4vw;
 
@@ -319,20 +343,21 @@ sticky - Element toggles between a relative and fixed position, depending on the
     border-width:0.1em;
 }
 
-.step_1_h2 {
-    transform:rotate(0deg);
-}
 
-.step_2_h2 {
+.step_1_h2 {
     transform:rotate(3deg);
 }
 
+.step_2_h2 {
+    transform:rotate(-3deg);
+}
+
 .step_3_h2 {
-    transform:rotate(0deg);
+    transform:rotate(2deg);
 }
 
 .step_4_h2 {
-    transform:rotate(-2deg);
+    transform:rotate(-1deg);
 }
 
 .step_1_h1, .step_2_h1, .step_3_h1, .step_4_h1 {
@@ -371,6 +396,10 @@ sticky - Element toggles between a relative and fixed position, depending on the
     position:absolute;
     height: 27.5vw;
     z-index:0;
+}
+
+.step_1_h2 {
+    width: 22vw;
 }
 
 .step_1 div:nth-child(2) img { /* This 2nd div child always contains the image. 1st div child is always text, accordingly. */
@@ -485,7 +514,7 @@ sticky - Element toggles between a relative and fixed position, depending on the
 
 #counts_1 {
     position:absolute;
-    top:25vw;
+    top:25.5vw;
     left:17vw;
     width:26vw;
     height:3vw;
@@ -501,10 +530,10 @@ sticky - Element toggles between a relative and fixed position, depending on the
 
 #counts_2 {
     position:absolute;
-    top:31.25vw;
+    top:31.5vw;
     left:17vw;
     width:26vw;
-    height:3vw;
+    height:2.5vw;
     border-width: .3em;
     border-style:dashed;
     border-radius: 0.2em;    
@@ -517,7 +546,7 @@ sticky - Element toggles between a relative and fixed position, depending on the
 
 #counts_3 {
     position:absolute;
-    top:37.5vw;
+    top:37vw;
     left:17vw;
     width:26vw;
     height:3vw;
@@ -616,7 +645,7 @@ footer > div {
 #gold_1 {
     position:relative;
     top:-24.5vw;
-    width:100vw;
+    width:99vw;
     margin-top: -5vw;
 }
 
@@ -642,11 +671,11 @@ footer > div {
 
 
 #gold_info:hover {
-animation: open 1s alternate ease-in-out infinite;
+animation: open2 1s alternate ease-in-out infinite;
 }
 
 #gold_info_2:hover {
-animation: open 1s alternate ease-in-out infinite;
+animation: open2 1s alternate ease-in-out infinite;
 }
 
 #gold_info {
