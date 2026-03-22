@@ -8,14 +8,33 @@ body {
     margin:0vw;
 }
 
+@keyframes bob {
+    0% {
+        top:-0.3vw;
+    }
+
+    50% {
+        top:0vw;
+    }
+
+
+    100% {
+        top:-0.3vw;
+    }
+}
+
 #dinosaur {
     position: fixed;
-    left: 0vw;
-    top: 0vw;
+    left: 4vw;
     margin:0vx;
     padding:0vw;
     z-index: 100;
+
+    width:15vw;
+    height:8vw;
+    animation: bob 3s ease-in-out alternate infinite;
 }
+
 
 #rollercoaster {
     position: absolute;
