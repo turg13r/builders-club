@@ -30,20 +30,30 @@ body {
     display:flex;
 }
 
-#blueprint_hammer {
+.blueprint_intro_container {
     position: absolute;
-    top:0vw;
-    width:20vw;
+    width:auto;
+    height: 40vw;
+    top:2.8vw;
+    left:17.5vw;
+    animation: shake 2s alternate infinite;
+    animation: 3s ease-in-out alternate 0s normal none infinite shake;
+}
+
+#blueprint_hammer {
+    position: relative;
+    top:-2vw;
+    width:22vw;
     height:auto;
-    left:40vw;
+    left:20vw;
     transform: rotate(10deg);
-    animation: shake 3s alternate-reverse infinite;
 }
 
 #blueprint_hat {
     top:-2vw;
-    right:-1vw;
+    right:0.2vw;
     width:15.5vw;
+    height:10vw;
     position: absolute;
     z-index:3;
     overflow:hidden;
@@ -52,9 +62,9 @@ body {
 #blueprint_intro {
     position: absolute;
     width:auto;
+    left:-17.5vw;
     height: 40vw;
     top:2.8vw;
-    animation: shake 2s alternate-reverse infinite;
 }
 
 @keyframes shake {
