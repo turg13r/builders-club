@@ -782,7 +782,7 @@ animation: open2 1s alternate ease-in-out infinite;
 #img_2 {
     position: relative;
     height: 0vw;
-    right:22.5vw;
+    right:20vw;
     z-index: -1;
     top:-100vw;
 }
