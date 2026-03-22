@@ -272,12 +272,12 @@ body {
 }
 
 .outline {
-    position:absolute;
+    position:relative;
     background-color: #e08720;
     width:70vw;
     height:109.6vw;
-    left:14.7vw;
-    top:147vw;
+    left:14.2vw;
+    top:8vw;
     border-radius: 1vw;
     background-image: url("imgs/pattern_1.jpg");
     background-size: cover;
@@ -287,17 +287,19 @@ body {
 
 
 .section_3 {
+    position:relative;
+    top:-110.5vw;
     display:flex;
     flex-wrap: nowrap;
     margin-bottom: -5vw;
     padding-top: 10vw;
     width:75vw;
-    height:131vw;
+    height:22vw;
     flex-direction: column;
     align-content:stretch;
     align-items:stretch;
     padding-left: 1vw;
-    gap:1vw 1vw;
+    gap:17vw 1vw;
 }
 
 #section_3_title:hover {
@@ -581,7 +583,9 @@ sticky - Element toggles between a relative and fixed position, depending on the
 
 #ending {
     width: 100vw;
-    overflow:hidden
+    overflow:hidden;
+    bottom:0vw;
+    height: auto;
 }
 
 #signup {
@@ -635,24 +639,13 @@ footer > div {
 }
 
 
-.section_2_bg{
-    position: absolute;
-    width:100vw;
-    height:50vw;
-    top:75vw;
-    z-index:-2;
-    object-fit: cover;
-}
-
 .section_3_bg {
     position: absolute;
     height:300vh;
     width:100vw;
-    top:100vw;
-    z-index:-1;
-    object-fit: cover;
+    bottom:-550vh;
+    object-fit: contain;
 }
-
 
 #gold_1 {
     position:relative;
