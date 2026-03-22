@@ -5,7 +5,6 @@
 
 body {
     background-color: #e1fffe;
-    margin:0px;
 }
 
 #dinosaur {
@@ -26,7 +25,6 @@ body {
 }
 
 .section_1 {
-    padding-bottom:700px;
     padding-bottom:36.5vw;
     width:100%;
     display:flex;
@@ -51,14 +49,6 @@ body {
     overflow:hidden;
 }
 
-#blueprint_upthere {
-    top:455px;
-    right:225px;
-    width:525px;
-    position: absolute;
-    z-index:1;
-}
-
 #blueprint_intro {
     position: absolute;
     width:auto;
@@ -79,11 +69,11 @@ body {
 
 @keyframes open {
     0% {
-        border-width: 5px;
+        border-width: 0.4vw;
     }
 
     100% {
-        border-width: 8px;
+        border-width: 0.55vw;
         border-color: #fd5a19;
     }
 }
@@ -133,19 +123,16 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    width:750px;
     width:40vw;
-    height:500px;
     height:40vh;
     position:relative;
     background-color: #ffffff;
     border-width: 0.4em;
     border-style: solid;
     border-color: #5d5e5a;
-    top:275px;
     top:15vw;
     right:-15vw;
-    box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 3.5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0.25em 0.25em 0.175em;
 }
 
 #img_desc span {
@@ -194,7 +181,6 @@ body {
     padding-top:15vw;
     padding-bottom: 26vw;
     display:flex;
-    /*gap:100px;*/
 }
 
 .blueprint_info{
@@ -209,7 +195,7 @@ body {
     box-shadow: rgba(201, 91, 40, 0.192) 0vw 0vw 0.4em 0.2em;
     border-style: solid;
     border-width: 0.1em;
-    border-color: #f06340;
+    border-color: #bfddd4;
     text-shadow: 0 0 0.08em #ce6629;
     padding:1vw;
     margin-top: -8vw;
@@ -218,6 +204,7 @@ body {
     color:rgb(0, 0, 0);
 
     background-image: url("imgs/paper_background.jpg");
+    background-size: 100% 100%;
     background-clip: padding-box;
 }
 
@@ -237,16 +224,16 @@ body {
 }
 
 .blueprint_title {
-    width:max-content;
-                font-size: 4.5em;
+                font-size: 2.5em;
+                padding:0.5vw;
+                padding-top: 1vw;
+                padding-left: 1vw;
                 position:absolute;
-                left:37vw;
+                left:42.5vw;
                 top:63.5vw;
                 z-index:20;
-                width:375px;
-                height:80px;
-                           margin-top:0.1vw;
-                           padding-left:2vw;
+                width:10vw;
+                height:3vw;
                            border-color: rgb(143, 221, 221);
                            border-radius: 0.1em;
                            border-width:0.05em;
@@ -256,13 +243,14 @@ body {
                            background-color: rgb(252, 197, 126);
                            background-clip:padding-box;
                            background-image: url(imgs/paper_background.jpg);
+                           background-size: 100% 100%;
                 
 }
 
 .section_3 {
     display:flex;
     flex-wrap: nowrap;
-    padding-bottom: 5vw;
+    padding-bottom: 0vw;
     padding-top: 10vw;
     width:75vw;
     height:131vw;
@@ -284,7 +272,7 @@ body {
     margin-bottom: -8vw;
     color:#683104;
     width:21vw;
-    margin-top:1vw;
+    margin-top:0vw;
     margin-left:37.5vw;
     padding-left: 0.7vw;
     height:5.25vw;
@@ -296,6 +284,7 @@ body {
     text-shadow: 0.01em .01em .05em #ad5c26;
     box-shadow: rgba(243, 154, 70, 0.877) 0.03em .03em .04em .01em; 
     background-image: url(imgs/paper_background.jpg);
+    background-size: 100% 100%;
 }
 
 /* .class > div:nth-child(-n + 3 of .affected_class)
@@ -340,7 +329,7 @@ sticky - Element toggles between a relative and fixed position, depending on the
     width:auto;
     height:90%;
     overflow:hidden;
-    box-shadow: rgba(181, 201, 170, 0.877) 0px 0px .2em 0.5em; 
+    box-shadow: rgba(181, 201, 170, 0.877) 0em -0.1em 0.8em 0.5em; 
 }
 
 #step_1_idea {
@@ -359,7 +348,8 @@ sticky - Element toggles between a relative and fixed position, depending on the
     width:auto;
     height:90%;
     overflow:hidden;
-    box-shadow: rgba(160, 184, 141, 0.877) 0px 0px .2em 0.5em; 
+    box-shadow: rgba(211, 216, 143, 0.877) 0em -0.1em 0.4em 0.2em; 
+ 
 }
 
 #step_2_idea {
@@ -369,17 +359,16 @@ sticky - Element toggles between a relative and fixed position, depending on the
 
 .step_3 div:nth-child(2) {
     position:absolute;
-    height: 525px;
+    height: 27.5vw;
     z-index:0;
 }
 
 .step_3 div:nth-child(2) img { /* This 2nd div child always contains the image. 1st div child is always text, accordingly. */
-    border-radius:2px;
+    border-radius:0.2em;
     width:auto;
     height:90%;
     overflow:hidden;
-    top:0px;
-    box-shadow: rgba(138, 182, 117, 0.959) 0px 0px .2em 0.5em; 
+    box-shadow: rgba(204, 126, 53, 0.87)  0em -0.1em 0.4em 0.2em; 
 }
 
 #step_3_idea {
@@ -398,8 +387,7 @@ sticky - Element toggles between a relative and fixed position, depending on the
     width:auto;
     height:90%;
     overflow:hidden;
-    box-shadow: rgba(126, 187, 107, 0.87) 0px 0px .2em 0.5em; 
-}
+    box-shadow: rgba(126, 187, 107, 0.87) 0em -0.1em 0.4em 0.2em; }
 
 #step_4_idea {
     color: rgb(68, 134, 24);
@@ -413,7 +401,7 @@ sticky - Element toggles between a relative and fixed position, depending on the
 .section_4 {
     display:flex;
     flex-wrap: nowrap;
-    padding-bottom: 225px;
+    padding-bottom: -5vw;
     padding-top: 10vw;
     width:auto;
     height: 42vw;
@@ -434,67 +422,64 @@ sticky - Element toggles between a relative and fixed position, depending on the
     margin:5vw;
     margin-top:-8vw;
     margin-left:2vw;
-    border-radius: 10px;
+    border-radius: 0.1em;
 }
 
-.section_4 div {
-    top:460px;
-    left:325px;
-    width:100px;
-    height:200px;
-    border-width: 20px;
-    border-style:double;
-    border-radius: 5px;
+.section_4 > div * {
+    top:25vw;
+    left:15vw;
+    width:12.5vw;
+    height:15vw;
+    border-radius: 0.1em;
     border-color: rgb(64, 160, 60);
-
 }
 
 #counts_1 {
     position:absolute;
-    top:480px;
-    left:325px;
-    width:500px;
-    height:60px;
-    border-width: 10px;
+    top:25vw;
+    left:17vw;
+    width:26vw;
+    height:3vw;
+    border-width: .3em;
     border-style:dashed;
-    border-radius: 5px;    
+    border-radius: 0.2em;    
     border-color: rgb(143, 212, 140);
-    padding:10px;
+    padding:0.7vw;
     font-size:1.5em;
     color:rgb(46, 71, 50);
-    box-shadow: rgba(90, 134, 81, 0.555) 2.6px 4px 3.2px;
+    box-shadow: rgba(90, 134, 81, 0.555) .27em .25em .1em;
 }
 
 #counts_2 {
     position:absolute;
-    top:600px;
-    left:325px;
-    width:500px;
-    height:60px;
-    border-width: 10px;
+    top:31.25vw;
+    left:17vw;
+    width:26vw;
+    height:3vw;
+    border-width: .3em;
     border-style:dashed;
-    border-radius: 5px;    
+    border-radius: 0.2em;    
     border-color: rgb(143, 212, 140);
-    padding:10px;
+    padding:0.7vw;
     font-size:1.5em;
     color:rgb(46, 71, 50);
-    box-shadow: rgba(90, 134, 81, 0.555) 2.6px 4px 3.2px;
+    box-shadow: rgba(90, 134, 81, 0.555) .27em .25em .1em;
 }
 
 #counts_3 {
     position:absolute;
-    top:710px;
-    left:325px;
-    width:500px;
-    height:60px;
-    border-width: 10px;
+    top:37.5vw;
+    left:17vw;
+    width:26vw;
+    height:3vw;
+    border-width: .3em;
     border-style:dashed;
-    border-radius: 5px;    
+    border-radius: 0.2em;    
     border-color: rgb(143, 212, 140);
-    padding:10px;
+    padding:0.9vw;
     font-size:1.2em;
     color:rgb(46, 71, 50);
-    box-shadow: rgba(90, 134, 81, 0.555) 2.6px 4px 3.2px;
+    box-shadow: rgba(90, 134, 81, 0.555) .27em .25em .1em;
 }
 
 
@@ -511,131 +496,69 @@ sticky - Element toggles between a relative and fixed position, depending on the
 
 #signup {
     position:absolute;
-    right:45px;
-    top:45px;
+    right:2.38vw;
+    top:2.35vw;
     width:auto;
-    height:750px;
+    height:82vh;
     z-index:10;
 }
 
 #signupbutton {
     position:absolute;
-    width:589px;
-    height:52.5px;
-    right:80px;
-    bottom: 379px; 
-    border-radius:4px;
+    width:30.75vw;
+    height:2.6vw;
+    right:4.175vw;
+    bottom: 20.3vw; 
     z-index:11;
 }
 
 
-.section_6 {
-    display:flex;
-    flex-wrap: nowrap;
-    padding-top: 20px;
-    width:auto;
-    height:400px;
-    flex-direction: column;
-    align-content:center;
-    align-items:center;
-    gap:5px;
-    position:relative;
-}
-
-footer {
-}
-
 footer > div {
     font-size:2em;
+    padding:.5em;
     color: rgb(197, 96, 13);
     background-color: rgb(88, 40, 0);
-    border-top-width: 8px;
-    border-bottom-width: 8px;
-    border-left-width:0px;
-    border-right-width:0px;
-    border-style: dashed;
-    padding:10px;
-    background-clip: border-box;
-    overflow: hidden;
 }
 
 
-.bar_0{
-    width:1900px;
-
-    border-style: dashed;
-    border-right-width: 0px;
-    border-left-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 10px;
-    border-color: #d1ac75;
-    padding-bottom: 5px;
-}
 
 
 .bar_1 {
-    width:1900px;
-    height: 220px;
+    width:100vw;
+    height: 12vw;
    
-    margin-top:50px;
+    margin-top:5vw;
+    margin-bottom: 5vw;
     background-image: url("imgs/coaster_1.png");
-    border-right-width: 0px;
-    border-left-width: 0px;
-    border-top-width: 10px;
-    border-bottom-width: 10px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 
 .bar_2 {
-    width:1900px;
-    height: 220px;
+    width:100vw;
+    height: 13vw;
    
-    margin-top:50px;
+    margin-top:5vw;
     background-image: url("imgs/coaster_2.png");
-    border-right-width: 0px;
-    border-left-width: 0px;
-    border-top-width: 10px;
-    border-bottom-width: 10px;
-}
-
-.abar_1 {
-    width:1900px;
-    height: 25px;
-   
-    background-color: rgb(228, 139, 57);
-    border-right-width: 0px;
-    border-left-width: 0px;
-    border-top-width: 10px;
-    border-bottom-width: 10px;
-    box-shadow: rgba(136, 74, 4, 0.747) 0px -50px 20px -40px inset;
-}
-
-.bbar_1 {
-    width:1900px;
-    height: 25px;
-   
-    background-color: rgb(228, 139, 57);
-    border-right-width: 0px;
-    border-left-width: 0px;
-    border-top-width: 10px;
-    border-bottom-width: 10px;
-    box-shadow: rgba(136, 74, 4, 0.747) 0px -50px 20px -40px inset;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 
 
 .section_2_bg{
     position: absolute;
-    width:1900px;
-    height:610px;
-    top:1500px;
+    width:100vw;
+    height:50vw;
+    top:75vw;
     z-index:-2;
     object-fit: cover;
 }
 
 .section_3_bg {
     position: absolute;
-    height:2700px;
-    width:auto;
-    top:2800px;
+    height:300vh;
+    width:100vw;
+    top:150vw;
     z-index:-1;
     object-fit: cover;
 }
@@ -643,12 +566,9 @@ footer > div {
 
 #gold_1 {
     position:relative;
-    top:-350px;
-}
-
-#gold_2 {
-    position:relative;
-    bottom:-550px;
+    top:-27.5vw;
+    width:100vw;
+    margin-top: -5vw;
 }
 
 @keyframes rotation_1 {
@@ -681,77 +601,80 @@ animation: open 1s alternate ease-in-out infinite;
 }
 
 #gold_info {
-    padding-top: 5px;
-    padding-left:10px;
-    margin-left:125px;
+    padding-top: 0.4vw;
+    padding-left:1vw;
+    margin-left:-5vw;
     font-size: 5em;
     position:absolute;
-    top:-125px;
+    top:-6vw;
     background-image: url(imgs/paper_background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 
     color:#683104;
-    width:950px;
+    width:50vw;
     
-    height:100px;
-    border-radius:10px;
-    border-width:5px;
+    height:5.5vw;
+    border-radius:0.1em;
+    border-width:0.05em;
     border-color:rgb(174, 219, 132);
     background-color: #f3bd6b;
     border-style:solid;
-    text-shadow: 1px 1px 5px #ad5c26;
-    box-shadow: rgba(135, 196, 123, 0.877) 3px 3px 8px 4px; 
+    text-shadow: 0.01em .01em .05em #ad5c26;
+    box-shadow: rgba(135, 196, 123, 0.877) .03em .03em .08em .04em; 
 }
 #gold_info_2 {
-    padding-top: 5px;
-    padding-left:10px;
-    margin-left:1115px;
+    padding-left: 0.5vw;
+    margin-left:57vw;
     font-size: 1.5em;
     position:absolute;
-    top:-60px;
+    top:-1.9vw;
     background-image: url(imgs/paper_background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 
     color:#683104;
-    width:150px;
+    width:7.6vw;
     
-    height:35px;
-    border-radius:10px;
-    border-width:5px;
+    height:1.75vw;
+    border-radius:0.4em;
+    border-width:0.2em;
     border-color:rgb(174, 219, 132);
     background-color: #f3bd6b;
     border-style:solid;
-    text-shadow: 1px 1px 5px #ad5c26;
-    box-shadow: rgba(135, 196, 123, 0.877) 3px 3px 8px 4px; 
+    text-shadow: .01em .01em .05em #ad5c26;
+    box-shadow: rgba(135, 196, 123, 0.877) .03em .03em .2em .08em; 
 }
 
 #text_1 {
     position:absolute;
     z-index:101;
-    top:238px;
-    right:79px;
-    width:589px;
-    height:65px;
+    top:12.4vw;
+    right:4.1vw;
+    width:30.9vw;
+    height:3.4vw;
 }
 #text_2 {
     position:absolute;
     z-index:101;
-    top:336px;
-    right:79px;
-    width:589px;
-    height:65px;
+    top:17.6vw;
+    right:4.1vw;
+    width:30.9vw;
+    height:3.4vw;
 }
 #text_3 {
     position:absolute;
     z-index:101;
-    top:437px;
-    right:79px;
-    width:589px;
-    height:65px;
+    top:22.8vw;
+    right:4.1vw;
+    width:30.9vw;
+    height:3.4vw;
 }
 #text_4 {
     position:absolute;
     z-index:101;
-    top:615px;
-    right:642px;
-    width:25px;
-    height:65px;
+    top:33.2vw;
+    right:32.46vw;
+    width:5em;
+    height:1.7em;
 }
