@@ -17,11 +17,11 @@ body {
 }
 
 #rollercoaster {
-    position:absolute;
+    position: absolute;
+    height:133vw;
+    height:70vw;
     width:100vw;
-    overflow:hidden;
-    height:auto;
-    z-index:0;
+    object-fit:cover;
 }
 
 .section_1 {
@@ -588,14 +588,6 @@ sticky - Element toggles between a relative and fixed position, depending on the
     height: auto;
 }
 
-#signup {
-    position:absolute;
-    right:2.38vw;
-    top:2.35vw;
-    width:auto;
-    height:82vh;
-    z-index:10;
-}
 
 #signupbutton {
     position:absolute;
@@ -620,8 +612,9 @@ footer > div {
 .bar_1 {
     width:100vw;
     height: 12vw;
+    z-index:100;
    
-    margin-top:-15vw;
+    margin-top:0vw;
     margin-bottom: 5vw;
     background-image: url("imgs/coaster_1.png");
     background-repeat: no-repeat;
@@ -638,14 +631,6 @@ footer > div {
     background-size: 100% auto;
 }
 
-
-.section_3_bg {
-    position: absolute;
-    height:300vh;
-    width:100vw;
-    bottom:-550vh;
-    object-fit: contain;
-}
 
 #gold_1 {
     position:relative;
@@ -760,3 +745,47 @@ animation: open2 1s alternate ease-in-out infinite;
     width:5em;
     height:1.7em;
 }
+
+
+#signup {
+    position:absolute;
+    height:40vw;
+    width: 30vw;
+    z-index:10;
+}
+
+#signup_div {
+    position: relative;
+    width:30vw;
+    height:0vw;
+    right:-65.38vw;
+    bottom:58.5vw;
+}
+
+#section_2_bg {
+    position: absolute;
+    height:133vw;
+    height:100vw;
+    width:100vw;
+    top:25vw;
+    object-fit:cover;
+    z-index:-1;
+}
+
+#section_3_bg {
+    z-index:-1;
+    position: relative;
+    top:225vw;
+    width:140vw;
+    height:130vw;
+    object-fit:contain;
+}
+
+#img_2 {
+    position: relative;
+    height: 0vw;
+    right:22.5vw;
+    z-index: -1;
+    top:-100vw;
+}
+
