@@ -623,7 +623,8 @@ footer > div {
     width:100vw;
     height: 13vw;
    
-    margin-top:5vw;
+    margin-top:-3vw;
+    margin-bottom: 3vw;
     background-image: url("imgs/coaster_2.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -747,7 +748,7 @@ animation: open2 1s alternate ease-in-out infinite;
 
 #signup {
     position:absolute;
-    height:40vw;
+    height:35vw;
     width: 30vw;
     z-index:10;
 }
