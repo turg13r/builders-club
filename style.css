@@ -5,6 +5,7 @@
 
 body {
     background-color: #e1fffe;
+    margin:0px;
 }
 
 #dinosaur {
@@ -18,7 +19,7 @@ body {
 
 #rollercoaster {
     position:absolute;
-    width:1900px;
+    width:900px;
     overflow:hidden;
     height:auto;
     z-index:0;
