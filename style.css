@@ -114,6 +114,7 @@ body {
 }
 
 #img_desc h1 {
+    position:relative;
     text-shadow: 0 0.1em 0.1em #f19b95;
     margin-top:-1.5vw;
     margin-left:0.1vw;
@@ -125,6 +126,7 @@ body {
 }
 
 #img_desc h2 {
+    position: relative;
     margin-top:-0.2vw;
     margin-left:0.2vw;
     text-shadow: 0 0.1em 0.1em #f19b95;
@@ -170,7 +172,7 @@ body {
     border-color: #9e340a;
     font-size: 1.9vw;
 
-    box-shadow: rgba(0, 0, 0, 0.15) 0.05em 0.1em 0.08em;
+    box-shadow: rgba(0, 0, 0, 0.15) 0.05vw 0.1vw 0.08vw;
     text-align: left;
 }
 
@@ -207,10 +209,10 @@ body {
 
 .blueprint_info{
     display:block;
-    position:absolute;
+    position:relative;
     width: 15vw;
-    top:88vw;
-    right:1vw;
+    top:16.5vw;
+    right:-40vw;
     height:27.5vw;
     width:27.5vw;
     border-color:rgb(97, 78, 43);
@@ -235,7 +237,7 @@ body {
 }
 #section_1_blueprint {
     width:65vw;
-    position:relative;
+    position:absolute;
     left:2vw;
     height:auto;
     box-shadow: rgba(40, 154, 199, 0.877) 0vw 0vw 1em 0.4em; 
@@ -248,20 +250,20 @@ body {
 .blueprint_title {
                 font-size: 3.5vw;
                 padding:0.5vw;
-                position:absolute;
+                position:relative;
 
-                left:68.5vw;                
-                top:72.75vw;
+                right:-68vw;                
+                top:1.75vw;
                 z-index:20;
                 padding-top:1.vw;
                 padding-left:1.5vw;
                 width:25vw;
                 height:4vw;
                            border-color: rgba(191, 243, 243, 0.644);
-                           border-width:0.05em;
+                           border-width:0.05vh;
                            border-style: solid;
-                           text-shadow: 0.03em 0.01em 0.05em #7e9b67;
-                           box-shadow: rgba(15, 90, 65, 0.877) 0.02em 0.02em 0.05em 0.02em; 
+                           text-shadow: 0.03vw 0.01vw 0.05vw #7e9b67;
+                           box-shadow: rgba(15, 90, 65, 0.877) 0.02vw 0.02vw 0.05vw 0.02vw; 
                            background-color: rgb(252, 197, 126);
                            background-clip:border-box;
                            background-image: url(imgs/paper_background.jpg);
