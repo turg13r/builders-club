@@ -5,6 +5,7 @@
 
 body {
     background-color: #e1fffe;
+    margin:0vw;
 }
 
 #dinosaur {
@@ -144,11 +145,8 @@ body {
 }
 
 #img_desc {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
     width:40vw;
-    height:40vh;
+    height:25vw;
     position:relative;
     background-color: #ffffff;
     border-width: 0.4em;
