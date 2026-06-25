@@ -6,6 +6,7 @@
 body {
     background-color: #e1fffe;
     margin:0vw;
+    overflow-x:hidden;
 }
 
 @keyframes bob {
@@ -528,6 +529,7 @@ sticky - Element toggles between a relative and fixed position, depending on the
     background-position-x:center;
     width:100vw;
     height:42.5vw;
+    margin:5vw;
     margin:5vw;
     margin-top:-8vw;
     margin-left:2.5vw;
