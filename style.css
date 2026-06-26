@@ -811,3 +811,30 @@ animation: open2 1s alternate ease-in-out infinite;
 #enter_button {
     height: 10.2vw;
 }
+
+#join_now {
+
+    position: relative;
+    left:0.6vw;
+    top: 11vw;
+    width: 38.5vw;
+    height:7.5vw;
+    border-style: solid;
+    border-radius: 0.1vw;
+    border-color: rgb(89, 187, 85);
+    background-color:rgb(126, 255, 87);
+    border-radius: 0.2vw;
+    font-size:6.5vw;
+    color: rgb(75, 111, 63);
+    text-align: center;
+    text-shadow: 0.2vw 0.1vw 0.2vw #2e7a2b;
+    box-shadow: rgba(90, 134, 81, 0.555) .04em .05em 0.03em;
+}
+
+
+#join_now:hover {
+     width: 38.7vw;
+    height:7.57vw;
+    left:0.5vw;
+    top:10.9vw;
+}
