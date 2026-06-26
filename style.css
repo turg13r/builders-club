@@ -829,6 +829,7 @@ animation: open2 1s alternate ease-in-out infinite;
     text-align: center;
     text-shadow: 0.2vw 0.1vw 0.2vw #2e7a2b;
     box-shadow: rgba(90, 134, 81, 0.555) .04em .05em 0.03em;
+    text-decoration:none;
 }
 
 
