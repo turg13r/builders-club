@@ -8,6 +8,16 @@ body {
     margin:0vw;
 }
 
+#foot {
+    font-size: 0.7vw;
+    margin:0vw;
+    z-index:900;
+    position:absolute;
+    left: .3vw;
+    top:0.3vw;
+    color: rgb(219, 253, 255)
+}
+
 @keyframes bob {
     0% {
         top:-0.3vw;
